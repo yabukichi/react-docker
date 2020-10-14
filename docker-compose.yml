@@ -1,0 +1,14 @@
+version: '3'
+services:
+   node:
+       build:
+        context: .
+       environment: 
+        - NODE_ENV=production
+       volumes:
+           - ./next/:/usr/src/app
+       working_dir: /usr/src/app
+       command: sh -c "npm run dev"
+       ports:
+           - "3000:3000"
+       tty: true
