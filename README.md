@@ -32,7 +32,7 @@ dockerイメージを削除せずに停止する。
 docker-compose stop
 ```
 
-dockerイメージを停止した場合、再起動はこのコマンド。
+dockerイメージを再起動。停止（stop）した時に使う。
 ```
 docker-compose start
 ```
